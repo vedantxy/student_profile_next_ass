@@ -1,8 +1,8 @@
 import Image from "next/image";
-import departmentData from "../../data/departmentData";
-import Link from "next/link";
+import departmentData from "../../data/departmentData"
+import Link from "next/link"
 
-async function Department() {
+async function Student() {
     
     return (
         <>
@@ -71,4 +71,6 @@ async function Department() {
         </>
     )
 }
-export default Department;
+
+
+export default Student; 
