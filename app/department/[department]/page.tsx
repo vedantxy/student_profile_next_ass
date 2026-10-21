@@ -1,13 +1,10 @@
-import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 import departmentData from "@/data/departmentData";
 import students from "@/data/studentData";
 
-async function Student({ params }: any) {
+async function Student({ params }: { params: Promise<{ department: string }> }) {
     const { department } = await params;
-    console.log(department)
-    const arr = departmentData;
-    const e = students ; 
+    const arr = departmentData; 
     return (
         <>
             <div className=" w-[95vw] h-[20vw]">
