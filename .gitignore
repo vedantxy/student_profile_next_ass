@@ -24,17 +24,6 @@
 .DS_Store
 *.pem
 
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Editor
-.vscode/
-.idea/
-*.swp
-*.swo
-
 # debug
 npm-debug.log*
 yarn-debug.log*
