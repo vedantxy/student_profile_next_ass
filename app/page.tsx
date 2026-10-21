@@ -14,7 +14,7 @@ function Student() {
                     Students
                 </div>
                 <div className="w-[100%] text-[1vw] pl-[10vw] flex items-center text-gray-700 h-[20%] ">
-                    Browse and explore all enrolled students.
+                    Lorem ipsum dolor sit amet.
                 </div>
 
                 <div className="w-[100%] flex justify-center h-[30%] ">
@@ -52,7 +52,7 @@ function Student() {
                 {
                     arr.map((e) => {
                         return (
-                            <div key={e.id} className="w-[30%] p-[0.5vw] h-[17vw] rounded-[1vw] border">
+                            <div key={e.id} className="w-[30%] p-[1=0.5vw] h-[17vw] rounded-[1vw] border">
                                 <div className="w-[100%] flex items-center justify-center gap-[15vw] h-[30%] ">
                                     <div className="w-[10%] h-[70%] rounder bg-blue-200 text-blue-700 flex justify-center items-center font-bold text-[1.1vw] rounded-[0.5vw]">
                                         {e.initials}
