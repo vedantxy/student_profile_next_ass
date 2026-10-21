@@ -1,7 +1,11 @@
-import studentData from "../../../data/studentData";
+import Image from "next/image";
+import studentData from "../../../data/studentData"
 
-export default async function Home({ params }: { params: Promise<{ student: string }> }) {
+
+export default async function Home({ params }: any) {
   const { student } = await params;
+  console.log(await params)
+  console.log(student);
   return (
     <div className="w-screen border flex justify-center items-center h-[90vh]">
       <div className="w-[80%] border h-[90%]">
@@ -131,7 +135,7 @@ export default async function Home({ params }: { params: Promise<{ student: stri
 
               studentData[Number(student) - 1]?.enrolledSubjects.map((a) => {
                 return (
-                  <div key={a.code} className="w-[100%] flex items-center pl-[1vw] h-[33%] ">
+                  <div className="w-[100%] flex items-center pl-[1vw] h-[33%] ">
                     {a.code}: {a.name}
                   </div>
                 )
@@ -147,7 +151,7 @@ export default async function Home({ params }: { params: Promise<{ student: stri
 
               studentData[Number(student) - 1]?.enrolledSubjects.map((a) => {
                 return (
-                  <div key={a.code + "-cat"} className="w-[100%] flex items-center pl-[1vw] h-[33%] ">
+                  <div className="w-[100%] flex items-center pl-[1vw] h-[33%] ">
                     {a.category}
                   </div>
                 )
