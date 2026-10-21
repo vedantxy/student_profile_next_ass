@@ -115,7 +115,7 @@ async function Student({ params }: { params: Promise<{ department: string }> }) 
                 {
                     arr[department - 1].students.map((e)=>{
                         return(
-                            <div key={students[e-1].id} className="w-[30%] p-[1=0.5vw] h-[17vw] rounded-[1vw] border">
+                            <div key={students[e-1].id} className="w-[30%] p-[0.5vw] h-[17vw] rounded-[1vw] border">
                                 <div className="w-[100%] flex items-center justify-center gap-[15vw] h-[30%] ">
                                     <div className="w-[10%] h-[70%] rounder bg-blue-200 text-blue-700 flex justify-center items-center font-bold text-[1.1vw] rounded-[0.5vw]">
                                         {students[e-1].initials}
